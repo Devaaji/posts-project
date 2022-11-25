@@ -3,16 +3,20 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ChakraProvider } from "@chakra-ui/react";
 import AuthUserProvider from "./context/AuthUserProvider";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import reportWebVitals from "./reportWebVitals";
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <AuthUserProvider>
-        <App />
-      </AuthUserProvider>
-    </ChakraProvider>
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider>
+        <AuthUserProvider>
+          <App />
+        </AuthUserProvider>
+      </ChakraProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
