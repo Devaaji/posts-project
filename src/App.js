@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { AuthUserContext } from "./context/AuthUserProvider";
+import DashboardPage from "./pages/dashboard";
+import LoginPages from "./pages/login";
 
-function App() {
+const App = () => {
+  const { id, username } = useContext(AuthUserContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<DashboardPage />} />
+        <Route
+          exact
+          path="/login"
+          element={id && username ? <Navigate to="/" /> : <LoginPages />}
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
