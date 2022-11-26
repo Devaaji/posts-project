@@ -58,6 +58,7 @@ const DashboardMain = () => {
       </Box>
       <VStack mt="5" h="64vh" overflow="auto" px="4">
         <Box as="span" ref={scrollUpWindow}></Box>
+        {isLoading && <Box>Loading.... </Box>}
         {isSuccess &&
           dataSlice?.map((post, i) => <DashboardPosts post={post} key={i} />)}
       </VStack>
