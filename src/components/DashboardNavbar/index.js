@@ -11,10 +11,6 @@ const DashboardNavbar = () => {
   const navigate = useNavigate();
   const { username } = useContext(AuthUserContext);
 
-  useEffect(() => {
-    console.log("username", username);
-  }, [username]);
-
   const handleLogout = async () => {
     Cookies.remove("_i");
     Cookies.remove("_u");
