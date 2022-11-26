@@ -20,6 +20,7 @@ const DashboardPagination = ({ total, current, onPageClick }) => {
             fontSize: { base: "10px", xl: "sm" },
             display: "flex",
             color: "black",
+            bg: "gray.100",
             padding: { base: "1.5" },
             justifyContent: "center",
             alignItems: "center",
