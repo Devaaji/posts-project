@@ -76,6 +76,7 @@ const DashboardPosts = ({ post }) => {
               cursor="pointer"
               px={1}
               rounded="md"
+              bg={isOpenComments && 'gray.200'}
               onClick={onToggleComments}
               _hover={{ bg: "gray.200" }}
             >
@@ -87,6 +88,7 @@ const DashboardPosts = ({ post }) => {
             <Box
               cursor="pointer"
               px={1}
+              bg={isOpenDetail && 'gray.200'}
               rounded="md"
               _hover={{ bg: "gray.200" }}
             >

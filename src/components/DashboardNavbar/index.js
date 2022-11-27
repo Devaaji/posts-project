@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Container, Box, Flex, Text, Button, HStack } from "@chakra-ui/react";
 import { GoSignIn } from "react-icons/go";
 import { IoLogOut } from "react-icons/io5";
