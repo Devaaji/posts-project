@@ -1,18 +1,19 @@
 # specification
 
 - Use Library ReactJS
-React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.[https://reactjs.org/](more info ReactJS to visit)
+  React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”. More [https://reactjs.org/](https://reactjs.org/)
 
 - CSS FrameWork Chakra UI
-Because it's good and simple for learn in style css adn configurable. [https://chakra-ui.com/](more info ChakraUI to visit)
+  Because it's good and simple for learn in style css adn configurable. More [https://chakra-ui.com/](https://chakra-ui.com/)
 
 - React Query v4
-React Query is often described as the way of fetching data or updating data from your components library for React. [https://tanstack.com/query/v4/](more info React Query to visit)
+  React Query is often described as the way of fetching data or updating data from your components library for React. More [https://tanstack.com/query/v4/](https://tanstack.com/query/v4/)
 
 - React Context
-Here I use React Context because the project is still small-scale.
+  Here I use React Context because the project is still small-scale.
 
 ## Deploy To Vercel
+
 Open [https://posts-project-beta.vercel.app/](https://posts-project-beta.vercel.app/) with your browser to see the result.
 
 ## Available Scripts
@@ -20,6 +21,7 @@ Open [https://posts-project-beta.vercel.app/](https://posts-project-beta.vercel.
 In the project directory, you can run:
 
 ### 1. `npm install or yarn install`
+
 ### 2. `npm start or yarn start`
 
 Runs the app in the development mode.\
@@ -31,8 +33,10 @@ You may also see any lint errors in the console.
 ### Configuration Package Manager
 
 THis Section in Package Manager build
+
 - [https://axios-http.com/](axios)
 - [https://github.com/js-cookie/js-cookie](js-cookie)
 
-#### Thanks 
+#### Thanks
+
 - [By: Deva Aji Saputra](https://github.com/Devaaji) - To Developer Website - Thanks
